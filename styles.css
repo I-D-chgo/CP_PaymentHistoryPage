@@ -1,0 +1,303 @@
+/* Reset padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+   }
+  
+  .body {
+      font-family: Roboto, Roboto-condensed, Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    padding: 0;
+  }
+  
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  /* Customized Bootstrap root styles */
+  :root {
+    --bs-red: #d40000;
+    --bs-orange: #f06721;
+    --bs-teal: #1380b1;
+    --bs-white: #fff;
+    --bs-gray: #707070;
+    --bs-gray-dark: #2d2d2d;
+    --bs-gray-100: #fcfcfc;
+    --bs-gray-200: #f7f7f7;
+    --bs-gray-300: #f6f6f6;
+    --bs-gray-400: #dfdfdf;
+    --bs-gray-500: #b2b2b2;
+    --bs-gray-600: #707070;
+    --bs-gray-700: #4a4a4a;
+    --bs-gray-800: #2d2d2d;
+    --bs-gray-900: #141414;
+    --bs-primary: #1380b1;
+    --bs-secondary: #f06721;
+    --bs-success: #198754;
+    --bs-info: #141414;
+    --bs-danger: #d40000;
+    --bs-light: #f7f7f7;
+    --bs-dark: #2d2d2d;
+    --bs-primary-rgb: 19,128,77;
+    --bs-secondary-rgb: 240,103,33;
+    --bs-info-rgb: 0,0,0;
+    --bs-warning: #f06721;
+    --bs-danger-rgb: 212,0,0;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-body-color: #141414;
+  }
+
+  /* Basic font styles for Roboto family from Google Fonts */
+  .roboto-thin {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+    
+    .roboto-light {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .roboto-regular {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .roboto-medium {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    .roboto-bold {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .roboto-black {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    
+    .roboto-thin-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+    }
+    
+    .roboto-light-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+    
+    .roboto-regular-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    .roboto-medium-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+    
+    .roboto-bold-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+    
+    .roboto-black-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    } 
+
+
+/* Basic styling for the table */  
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  /* --bs-table-striped-color: #f6f6f6;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05); */
+  --bs-table-active-color: #141414;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #141414;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  color: #141414;
+  border-top: 1px solid #dfdfdf;
+}
+.table table-hover {
+  color: var(--bs-body-color)
+}
+.table thead th {
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.25;
+  padding: .75rem;
+  background-color: var(--bs-gray-300);
+}
+.table tbody th {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 0;
+}
+.table tbody td {
+  font-size: .875rem;
+  line-height: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.table > :not(:first-child) {
+  border-top: 1px solid var(--bs-gray-400);
+}
+.table > :not(caption) > * > * {
+  padding: 0;
+}
+.table-hover tbody th {
+  font-size: .875rem;
+  font-weight: 400;
+  color: var(--bs-body-color);
+  padding-right: 1rem;
+}
+.table-hover tbody tr {
+  font-size: .875rem;
+  text-decoration: none;
+  vertical-align: middle;
+  color: var(--bs-primary);
+}
+.table-hover tbody tr:hover {
+  color: var(--bs-table-hover-color);
+  cursor: pointer;
+}
+.table-hover tbody td {
+  vertical-align: middle;
+  color: var(--bs-body-color);
+}
+.table-hover tbody td p {
+  font-size: .875rem;
+  text-align: right;
+  padding: 0 2.125rem 0 0;
+  margin-top: 1rem;
+  margin-left: 0;
+}
+.table td span.comment {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  font-size: .875rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Basic styling for Table Transaction Details Bootstrap icons */
+i.bi {
+    font-size: .75rem;
+    font-weight: 500;
+    font-style: normal;
+    vertical-align: middle;
+  }
+
+/* Basic Breadcrumbs styling */
+.breadcrumb-item {
+  font-size: 0.75rem;
+  color:#1380b1;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.breadcrumb-item a {
+  color:#1380b1;
+  text-decoration: none;
+}
+.breadcrumb-item a:hover {
+  font-weight: 500;
+  letter-spacing: -.01rem;
+}
+
+/* Basic fonts styling */
+h4 {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: var(--bs-gray-600);
+  padding: 0.5rem 0 0 0;
+}
+.container .header p {
+  font-size: 0.875rem;
+  padding-bottom: 1rem;
+}
+.p i {
+  padding: 0;
+  margin: 0;
+}
+
+/* Basic styling for Date Range dropdown dropend menu */
+.container .btn-group {
+  padding-bottom: 1.25rem;
+}
+.btn-secondary {
+  font-size: 0.625rem;
+  vertical-align: middle;
+  padding: .3125rem .25rem .25rem .75rem;
+  border-radius: .125rem;
+  color: #fff;
+  background-color: #1380b1;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: var(--bs-gray-700);
+}
+.btn-secondary:focus {
+  box-shadow: none;
+}
+.dropdown-menu {
+  min-width: 5rem;
+  font-size: 0.75rem;
+  padding: 0 0 .375rem 0;
+  margin: 0;
+  color: var(--bs-gray-800);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--bs-gray-400);
+  border-radius: 0;
+  box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.2);
+}
+.dropend .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: .25em;
+  vertical-align: .25em;
+  content: "";
+  border: none;
+}
+.wrapper-datePicker {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper-datePicker p {
+  font-size: .75rem;
+  font-style: italic;
+  line-height: 2;
+  padding-left: 1rem;
+}
+
+/* Basic styling for Date Range Dropdown Menu Bootstrap Icons */
+.btn-secondary .bi {
+    font-size: 0.625rem;
+    padding: 0 0 0 .5rem;
+    -webkit-text-stroke: 0.5px;
+}
